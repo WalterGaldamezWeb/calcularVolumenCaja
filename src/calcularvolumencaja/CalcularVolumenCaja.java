@@ -23,8 +23,8 @@ class Caja{
         this.largo=largo;
     }
     
-    double calcularVolumen(double ancho,double alto,double profundo){
-        double volumen=ancho*alto*profundo;
+    double calcularVolumen(double ancho,double alto,double largo){
+        double volumen=ancho*alto*largo;
         return volumen;
         }
 }
@@ -42,7 +42,7 @@ public class CalcularVolumenCaja {
         double ancho = leer.nextDouble();
         System.out.println("Ingrese la altura de la caja");
         double alto = leer.nextDouble();
-        System.out.println("Ingrese la profundidad de la caja");
+        System.out.println("Ingrese el largo de la caja");
         double largo = leer.nextDouble();
         
         double resultado = objeto.calcularVolumen(ancho, alto, largo);
